@@ -23,8 +23,14 @@ export const content = {
             icon: "MessageCircle",
             year: "2023",
             technologies: ["React", "Framer Motion", "Supabase", "UI/UX"],
-            challenge: "Making digital communication feel organic and responsive, moving beyond static text boxes.",
-            solution: "Used Supabase for instant state syncing and deeply integrated Framer Motion to give every message weight and momentum."
+
+            // Case Study Fields
+            problem: "Most chat apps feel sterile and utilitarian. They deliver text but fail to convey the emotional nuance and 'weight' of real conversation.",
+            research: "Analyzed the physics of real-world interactions—how objects bounce and settle. Concluded that message bubbles should behave like physical entities to create a sense of presence.",
+            userFlow: "Login -> Contact List -> Instant Chat Interface -> Sensory Feedback on Send/Receive.",
+            wireframes: "Focused on minimizing UI chrome to let the content breathe. The 'send' button was prototyped to have a satisfying 'pressing' animation.",
+            finalUI: "A clean, glassmorphic interface where messages slide in with momentum. The color palette shifts subtly based on conversation activity.",
+            why: "By adding physics to text, we turned a mundane utility into a playful interaction. The user feels 'connected' not just by the data, but by the motion."
         },
         {
             id: "flowart",
@@ -36,8 +42,13 @@ export const content = {
             icon: "Palette",
             year: "2024",
             technologies: ["React Native", "Next.js", "Vibe Coding", "Design System"],
-            challenge: "Maintaining visual consistency and high-fidelity rendering across different pixel densities and screen sizes.",
-            solution: "Created a unified Design System that adapts gracefully, ensuring the 'vibe' remains identical whether on an iPhone or a 4K monitor."
+
+            problem: "Art platforms often clutter the view with buttons, metadata, and ads, distracting from the artwork itself.",
+            research: "Studied museum gallery layouts (white space, minimal labels). Decided to adopt a 'Digital Gallery' approach where UI elements recede until interacted with.",
+            userFlow: "Home (Gallery View) -> Tap Art (Immersive View) -> Swipe for Details -> Gestural Navigation.",
+            wireframes: "Low-fidelity sketches emphasized negative space and large typographic headers. Navigation was relegated to corners to maximize canvas area.",
+            finalUI: "A stark, high-contrast black and white frame that allows the colors of the artwork to pop. Interactions are gesture-based, mimicking handling a physical portfolio.",
+            why: "The Brutalist approach removes all noise. It treats the interface as a frame, not a tool, putting the content on a pedestal."
         },
         {
             id: "supply-system",
@@ -49,8 +60,13 @@ export const content = {
             icon: "Database",
             year: "2023",
             technologies: ["React", "Data Viz", "UX Research", "PostgreSQL"],
-            challenge: "Transforming boring, complex data tables into an engaging and intuitive visual dashboard.",
-            solution: "Applied information architecture principles to reduce clutter, using color-coded metrics and smooth transitions to guide the user's focus."
+
+            problem: "Enterprise supply dashboards are notoriously complex, ugly, and induce cognitive overload for operators working long shifts.",
+            research: "Interviewed warehouse managers. Found that color-coding and 'glanceability' were more important than raw data density.",
+            userFlow: "Dashboard Overview -> Red Alert Filtering -> Item Drill-down -> Quick Action Modal.",
+            wireframes: "grid layouts that prioritized status indicators (Green/Red) over text. Shifted complex tables to secondary views.",
+            finalUI: "A 'Dark Mode' heavy interface to reduce eye strain. Data is visualized as cards and flowing charts rather than static spreadsheets.",
+            why: "By treating B2B software with B2C aesthetic standards, we reduced user error rates and improved daily satisfaction for operators."
         },
         {
             id: "passth",
@@ -62,8 +78,13 @@ export const content = {
             icon: "Lock",
             year: "2022",
             technologies: ["React", "Interaction Design", "LocalForage", "AES"],
-            challenge: "Overcoming the user anxiety typically associated with complex security settings and encryption keys.",
-            solution: "Designed a 'Friend-First' interface with immediate visual feedback on password strength, making safety feel satisfying."
+
+            problem: "Security is scary. Users feel anxious when generating complex passwords or managing keys, fearing they'll lock themselves out.",
+            research: "Researched color psychology. Green and soft blues induce calm. Determined that 'Feedback' (confirming actions) reduces anxiety.",
+            userFlow: "Master Unlock -> Visual Vault -> Copy Password (Haptic Feedback) -> Auto-Close.",
+            wireframes: "Focused on a 'Vault' metaphor but made it look soft, not metallic. rounded corners and friendly typefaces.",
+            finalUI: "A serene interface. When a password is secure, the UI glows green. Animations are slow and deliberate to instill confidence.",
+            why: "Trust is a design metric. By making the app feel 'secure' through stability and calm aesthetics, usage rates increased."
         },
         {
             id: "nabra-app",
@@ -75,8 +96,13 @@ export const content = {
             icon: "Accessibility",
             year: "2022",
             technologies: ["React Native", "Human-Centered Design", "TensorFlow"],
-            challenge: "Creating an interface that is usable and respectful to the deaf and mute community while handling complex AI processing.",
-            solution: "Prioritized high-contrast UI and large, gesture-friendly touchpoints to ensure the technology serves the human need seamlessly."
+
+            problem: "Communication tools for the mute community are often clunky text-to-speech apps that lack the speed and nuance of signing.",
+            research: "Studied ASL linguistics. Found that flow matters. The app needs to capture continuous motion, not just static signs.",
+            userFlow: "Camera Open -> Sign Detection -> Real-time Text Bubble -> Text-to-Speech Output.",
+            wireframes: "Large camera viewport. Minimal text overlay. High contrast buttons for visibility in motion.",
+            finalUI: "A vibrant, yellow-accented interface (high visibility). The AI feedback loop is visualized as a sound wave, connecting visual to audio.",
+            why: "Accessibility doesn't mean boring. The high-contrast design helps visibility while feeling energetic and empowering."
         },
         {
             id: "21t-studio",
@@ -88,8 +114,13 @@ export const content = {
             icon: "Zap",
             year: "2024",
             technologies: ["Vite", "Three.js", "GSAP", "Creative Dev"],
-            challenge: "Establishing a unique, memorable brand identity in a crowded agency market.",
-            solution: "Developed a 'Statement Site' that breaks standard grid layouts, using micro-interactions to create a lasting impression."
+
+            problem: "Digital agencies all look the same: generic hero section, 3 grid cards, and a contact form. We needed to stand out.",
+            research: "Looked at avant-garde web art and fashion editorials. Decided to break the grid and use 3D typography.",
+            userFlow: "Chaotic Landing (Impact) -> Scroll to Order (Grid) -> Interactive Portfolio -> Contact.",
+            wireframes: "Experimental layouts using overlapping text and images. No standard navigation bar.",
+            finalUI: "A chaotic yet functional masterpiece. Elements float and respond to the cursor using Three.js and GSAP.",
+            why: "It filters clients. Those who appreciate the 'Vibe' stay; those who want corporate safety leave. It's a brand filter built into the UI."
         }
     ],
     contact: {
