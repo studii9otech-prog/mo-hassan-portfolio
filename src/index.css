@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #6840FF;
+  --bg-color: #FFFFF7;
+  --text-color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #050505;
+    --text-color: #f0f0f0;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+/* Creature styles */
+.creature-dot {
+  will-change: transform, opacity;
+  mix-blend-mode: plus-lighter;
+  /* Adjust based on theme */
+  /* backdrop-filter: blur(2px); */
+  /* Optional effect */
+}
+
+/* Custom Text Selection */
+::selection {
+  background-color: var(--primary);
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(104, 64, 255, 0.8);
+}
+
+/* Firefox compatibility */
+::-moz-selection {
+  background-color: var(--primary);
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(104, 64, 255, 0.8);
+}
+
+/* Progressive Scroll Effect */
+:root {
+  --progressive-start: 50vh;
+  --progressive-dimmed: color-mix(in srgb, var(--text-color), transparent 85%);
+  --progressive-accent: var(--primary);
+}
+
+.progressive-text-item {
+  background: linear-gradient(180deg,
+      var(--progressive-dimmed) 0 calc(var(--progressive-start) - 1em),
+      var(--progressive-accent) calc(var(--progressive-start) - 0.2em) calc(var(--progressive-start) + 0.2em),
+      var(--progressive-dimmed) calc(var(--progressive-start) + 1em));
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(3rem, 12vw, 8rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+}
+
+h2 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--primary), transparent 70%);
+  border-radius: 100px;
+  border: 3px solid var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--bg-color);
+}
