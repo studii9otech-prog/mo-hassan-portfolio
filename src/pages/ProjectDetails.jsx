@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { content } from '../data/content';
-import { MessageCircle, Palette, Database, Lock, Accessibility, Heart, Zap, ArrowLeft, Calendar, Code, Target, Lightbulb, Search, Workflow, Layout, Sparkles, ArrowRight, CheckCircle } from 'lucide-react';
+import { MessageCircle, Palette, Database, Lock, Accessibility, Heart, Zap, ArrowLeft, Calendar, Code, Target, Lightbulb, Search, Workflow, Layout, Sparkles, ArrowRight, CheckCircle, Navigation } from 'lucide-react';
 import Contact from '../components/Contact';
 import WireframeVisuals from '../components/WireframeVisuals';
 
@@ -13,7 +13,8 @@ const iconMap = {
     Lock,
     Accessibility,
     Heart,
-    Zap
+    Zap,
+    Navigation
 };
 
 // --- SCROLLYTELLING COMPONENT ---
