@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { content } from '../data/content';
-import { ArrowUpRight, MessageCircle, Palette, Database, Lock, Accessibility, Zap, Heart } from 'lucide-react';
+import { ArrowUpRight, MessageCircle, Palette, Database, Lock, Accessibility, Zap, Heart, Navigation } from 'lucide-react';
 import RevealText from './RevealText';
 
 const iconMap = {
@@ -11,7 +11,8 @@ const iconMap = {
     Lock,
     Accessibility,
     Zap,
-    Heart
+    Heart,
+    Navigation
 };
 
 const Hero = () => {

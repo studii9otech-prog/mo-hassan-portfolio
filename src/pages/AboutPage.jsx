@@ -94,7 +94,7 @@ const AboutPage = () => {
                     </h1>
                     <div className="max-w-2xl">
                         <RevealText
-                            text="AI-Assisted Developer & UI/UX Designer crafting the future of digital products."
+                            text="UI/UX Designer powering the future of interfaces with AI-Assisted Development."
                             className="text-xl md:text-3xl font-light opacity-80 leading-relaxed"
                             delay={0.2}
                         />
@@ -176,9 +176,8 @@ const AboutPage = () => {
                                 <Users className="text-primary" /> Professional Summary
                             </h2>
                             <p className="text-xl opacity-70 leading-relaxed font-light">
-                                A versatile developer and designer specializing in <span className="text-primary font-medium">AI-Assisted Development (Vibe Coding)</span> and <span className="text-primary font-medium">UI/UX Design</span>, backed by 2+ years of experience.
-                                Proficient in building full-stack solutions using AI-driven workflows, with a solid understanding of programming fundamentals and backend development using Supabase.
-                                Proven track record in leading projects, optimizing operational efficiency, and developing teams.
+                                First and foremost, I am a <span className="text-primary font-medium">UI/UX Designer</span>. My passion lies in crafting intuitive, beautiful experiences.
+                                While I understand the fundamentals of code, I leverage <span className="text-primary font-medium">AI (Vibe Coding)</span> as a powerful tool to transform my designs into functioning reality, allowing me to bridge the gap between concept and code without losing the soul of the design.
                             </p>
                         </div>
 

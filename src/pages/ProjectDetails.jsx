@@ -145,6 +145,10 @@ const ProjectDetails = () => {
     const textCardClass = "bg-[#050505]/80 backdrop-blur-xl border border-white/10 p-8 md:p-12 rounded-[2rem] shadow-2xl max-w-2xl w-full border-t border-t-white/20";
     const labelClass = "text-xs font-bold uppercase tracking-widest opacity-60 mb-6 flex items-center gap-2";
 
+    const currentIndex = content.projects.findIndex(p => p.id === id);
+    const nextIndex = (currentIndex + 1) % content.projects.length;
+    const nextProject = content.projects[nextIndex];
+
     return (
         <main className="min-h-screen text-white relative">
 
@@ -260,10 +264,11 @@ const ProjectDetails = () => {
 
             <section className="relative z-10 bg-bg-color">
                 <div className="border-t border-white/10">
-                    <Link to="/" className="block py-24 text-center group">
-                        <span className="text-4xl md:text-6xl font-black tracking-tighter opacity-20 group-hover:opacity-100 transition-opacity duration-500">
-                            NEXT CASE STUDY <ArrowRight className="inline-block ml-4 mb-2" />
-                        </span>
+                    <Link to={`/project/${nextProject.id}`} className="block py-24 text-center group">
+                        <span className="text-2xl font-bold uppercase tracking-widest text-[#00C853] block mb-4 opacity-0 group-hover:opacity-100 transition-opacity">Up Next</span>
+                        <h3 className="text-3xl md:text-5xl font-black tracking-tighter opacity-40 group-hover:opacity-100 transition-opacity duration-500">
+                            {nextProject.title} <ArrowRight className="inline-block ml-4 mb-2" />
+                        </h3>
                     </Link>
                 </div>
                 <Contact />

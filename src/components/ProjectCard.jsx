@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { MessageCircle, Palette, Database, Lock, Accessibility, Heart, Zap } from 'lucide-react';
+import { MessageCircle, Palette, Database, Lock, Accessibility, Heart, Zap, Navigation } from 'lucide-react';
 
 const iconMap = {
     MessageCircle,
@@ -10,7 +10,8 @@ const iconMap = {
     Lock,
     Accessibility,
     Heart,
-    Zap
+    Zap,
+    Navigation
 };
 
 const ProjectCard = ({ project, index, range, targetScale }) => {

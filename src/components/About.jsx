@@ -140,7 +140,7 @@ const About = () => {
                         <div className="space-y-6">
                             <span className="text-xs uppercase tracking-widest text-primary/60 font-bold block">Objective</span>
                             <RevealText
-                                text="I am a versatile developer & designer specializing in Vibe Coding and AI-Driven Workflows."
+                                text="I am a UI/UX Designer who brings visions to life through Vibe Coding & AI."
                                 className="text-4xl md:text-6xl font-semibold leading-[1.1] tracking-tight"
                                 stagger={0.02}
                                 delay={0.2}

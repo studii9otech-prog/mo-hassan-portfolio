@@ -7,10 +7,10 @@ import Contact from '../components/Contact';
 
 const Experience = () => {
     const aiExpertise = [
-        { title: "Vibe Coding", desc: "Expertise in AI-assisted development with strong programming logic." },
-        { title: "AI-Driven Workflows", desc: "Building complex systems using Bolt, Windsurf, and Antigravity." },
-        { title: "LLM Mastery", desc: "Optimizing prompts for Claude 3.5, GPT-4o, and Gemini 1.5 Pro." },
-        { title: "Backend Mastery", desc: "Full-stack integration using Supabase Auth & Real-time DB." }
+        { title: "Vibe Coding", desc: "Using AI to translate design logic into functional reality, ensuring the final product matches the creative vision." },
+        { title: "Rapid Prototyping", desc: "Accelerating the design-to-build process using tools like Bolt & Windsurf to validate ideas instantly." },
+        { title: "AI-Assisted Design", desc: "Directing LLMs (Claude, GPT-4) to write code that adheres strictly to UX principles and visual aesthetics." },
+        { title: "Functional UX", desc: "Connecting interfaces to real data (Supabase) to deliver living products, not just static screens." }
     ];
 
     const professionalExperience = [
@@ -319,7 +319,7 @@ const Experience = () => {
                         <div className="space-y-6">
                             {[
                                 { lang: "Arabic", level: "Native", val: 100 },
-                                { lang: "English", level: "Upper Intermediate", val: 75 },
+                                { lang: "English", level: "Elementary (In Progress)", val: 35 },
                             ].map((l, idx) => (
                                 <div key={idx} className="space-y-2">
                                     <div className="flex justify-between items-end">

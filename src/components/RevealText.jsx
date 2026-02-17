@@ -38,7 +38,6 @@ const RevealText = ({ text, className, delay = 0, stagger = 0.05, once = true })
 
     return (
         <motion.div
-            style={{ display: "flex", flexWrap: "wrap" }}
             variants={container}
             initial="hidden"
             whileInView="visible"
@@ -49,7 +48,7 @@ const RevealText = ({ text, className, delay = 0, stagger = 0.05, once = true })
                 <motion.span
                     variants={child}
                     key={index}
-                    style={{ marginRight: "0.25em", display: "inline-block" }}
+                    style={{ display: "inline-block", marginRight: "0.25em" }}
                 >
                     {word === "" ? "\u00A0" : word}
                 </motion.span>

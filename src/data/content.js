@@ -1,11 +1,11 @@
 export const content = {
     about: {
         title: "About Me",
-        role: "Vibe Coder & UI/UX Designer",
+        role: "UI/UX Designer & AI Strategist",
         summary: [
-            "I am a **Vibe Coder**—a designer who writes code to bring visions to life. My focus is on the **feel** and **flow** of digital experiences, bridging the gap between high-end UI/UX and functional engineering.",
-            "With a background in **UI/UX** and a toolkit built on **React** & **Supabase**, I don't just write functions; I craft interactions. I use AI as a force multiplier to ship complex, polished products without getting bogged down in boilerplate.",
-            "My philosophy is simple: **If it feels right, it is right.** I build interfaces that breathe, move, and connect with users on an emotional level."
+            "I am a **UI/UX Designer** who codes. My focus is on the **feel** and **flow** of digital experiences, using AI to bridge the gap between high-end design and functional reality.",
+            "With a background in **UI/UX** and a toolkit built on **React** & **Supabase**, I don't just design static screens; I build living interfaces. I use AI (Vibe Coding) to execute my creative vision without being limited by traditional development bottlenecks.",
+            "My philosophy is simple: **Design is the core.** Code is just the medium I use to deliver it."
         ],
         skills: [
             "Vibe Coding", "UI/UX Design", "Framer Motion", "React",
@@ -13,6 +13,24 @@ export const content = {
         ]
     },
     projects: [
+        {
+            id: "amwag-travel",
+            title: "Amwag Travel",
+            category: "Product Design",
+            description: "A comprehensive travel companion app designed to transform intercity travel into a seamless, secure, and enjoyable journey.",
+            link: "https://www.behance.net/gallery/216216367/Amwag-Travel-Your-Journeys-Made-Easier-with-Us-",
+            color: "#00C853",
+            icon: "Navigation",
+            year: "2024",
+            technologies: ["React Native", "UX Research", "Figma", "Payment Gateway"],
+
+            problem: "Current travel booking methods are time-consuming and fragmented. In-person booking is inconvenient, and existing digital solutions lack usability, leading to poor customer satisfaction and limited growth.",
+            research: "Conducted user surveys identifying that 70% of travelers find current booking processes stressful. Focused on 'Trust' and 'Ease' as core design pillars.",
+            userFlow: "Search Trip -> Select Seat -> Secure Payment -> Real-time Tracking -> Digital Ticket.",
+            wireframes: "Prioritized clear hierarchy and large touch targets. The 'Booking' flow was designed to be completed in under 3 taps.",
+            finalUI: "A clean, trustworthy interface using calming greens and blues. The 'My Journey' feature acts as a digital companion, guiding the user from departure to arrival.",
+            why: "By solving the friction of booking, we didn't just build an app; we built a travel companion that respects the user's time and safety."
+        },
         {
             id: "chat-app",
             title: "Real-Time Chat App",
@@ -37,7 +55,7 @@ export const content = {
             title: "FlowArt",
             category: "Visual Design",
             description: "An artistic content platform that bridges the gap between mobile and web. Designed with a 'Brutalist' aesthetic to let the art speak for itself.",
-            link: "#",
+            link: "https://www.linkedin.com/posts/mo-hassan21ta_excited-to-finally-share-my-project-flowart-ugcPost-7419925374127702016-bk9h?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEz17e8BcgHJToyW8kTNErDd7IZgXlXNu7A",
             color: "#FF4081",
             icon: "Palette",
             year: "2024",
@@ -52,10 +70,10 @@ export const content = {
         },
         {
             id: "supply-system",
-            title: "Supply Management System",
+            title: "Tawreed",
             category: "Information Arch",
             description: "Redefining enterprise software by prioritizing cognitive ease. A supply system that looks as good as it performs.",
-            link: "#",
+            link: "https://www.facebook.com/share/v/1Dg6EmBTXr/",
             color: "#40C4FF",
             icon: "Database",
             year: "2023",
