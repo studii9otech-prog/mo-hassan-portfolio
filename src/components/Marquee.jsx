@@ -33,10 +33,10 @@ const Marquee = ({ children, baseVelocity = 100 }) => {
     });
 
     return (
-        <div className="overflow-hidden whitespace-nowrap flex flex-nowrap letter-spacing-tighter overflow-x-hidden">
-            <motion.div className="flex whitespace-nowrap flex-nowrap items-center" style={{ x }}>
+        <div className="overflow-hidden whitespace-nowrap flex flex-nowrap letter-spacing-tighter overflow-x-hidden pb-4">
+            <motion.div className="flex whitespace-nowrap flex-nowrap items-center pt-2 pb-6" style={{ x }}>
                 {Array.from({ length: 4 }).map((_, i) => (
-                    <span key={i} className="mr-8">{children}</span>
+                    <span key={i} className="mr-8 leading-normal">{children}</span>
                 ))}
             </motion.div>
         </div>

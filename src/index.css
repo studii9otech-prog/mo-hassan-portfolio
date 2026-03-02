@@ -16,7 +16,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -70,19 +70,7 @@ body {
   line-height: 1.2;
 }
 
-h1 {
-  font-size: clamp(3rem, 12vw, 8rem);
-  font-weight: 900;
-  letter-spacing: -0.05em;
-  line-height: 0.9;
-}
 
-h2 {
-  font-size: clamp(2rem, 6vw, 4rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-}
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {

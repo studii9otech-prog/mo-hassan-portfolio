@@ -33,7 +33,7 @@ const Contact = () => {
                             whileInView={{ y: 0, opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                            className="text-[4rem] md:text-[8rem] lg:text-[11rem] font-bold tracking-tighter leading-[0.85] uppercase"
+                            className="text-[2.5rem] md:text-[8rem] lg:text-[11rem] font-bold tracking-tighter leading-[0.85] uppercase"
                         >
                             Get in<br /> <span className="text-transparent italic font-light outline-text" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>Touch.</span>
                         </motion.h2>
@@ -114,7 +114,7 @@ const Contact = () => {
                                             href={content.contact.linkedin}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-xl font-medium hover:text-primary transition-colors flex items-center gap-2"
+                                            className="text-xl font-medium hover:text-[#0077b5] transition-colors flex items-center gap-2"
                                             aria-label="Visit LinkedIn Profile"
                                         >
                                             LinkedIn <span className="text-xs opacity-50">↗</span>
@@ -123,10 +123,19 @@ const Contact = () => {
                                             href={content.contact.behance}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-xl font-medium hover:text-primary transition-colors flex items-center gap-2"
+                                            className="text-xl font-medium hover:text-[#1769ff] transition-colors flex items-center gap-2"
                                             aria-label="Visit Behance Profile"
                                         >
                                             Behance <span className="text-xs opacity-50">↗</span>
+                                        </a>
+                                        <a
+                                            href="https://wa.me/201096550164"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-xl font-medium hover:text-[#25D366] transition-colors flex items-center gap-2"
+                                            aria-label="Chat on WhatsApp"
+                                        >
+                                            WhatsApp <span className="text-xs opacity-50">↗</span>
                                         </a>
                                     </div>
                                 </div>
@@ -134,6 +143,18 @@ const Contact = () => {
                                     <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-500 font-bold block">Location</span>
                                     <span className="text-xl font-medium block">{content.contact.location}</span>
                                     <span className="text-xs opacity-50 block uppercase tracking-widest">Available Remotely</span>
+
+                                </div>
+                                <div className="space-y-4">
+                                    <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-500 font-bold block">Phone</span>
+                                    <a
+                                        href="https://wa.me/201096550164"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-xl font-medium block hover:text-[#25D366] transition-colors"
+                                    >
+                                        +20 109 655 0164
+                                    </a>
                                 </div>
                             </div>
                         </div>

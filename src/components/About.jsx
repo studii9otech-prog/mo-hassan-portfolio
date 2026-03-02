@@ -87,7 +87,7 @@ const About = () => {
                         {/* Interactive Personal Identity Card */}
                         <motion.div
                             style={{ y: portraitY }}
-                            className="aspect-[3/4] bg-neutral-900 border border-white/10 rounded-3xl overflow-hidden relative group shadow-2xl shadow-primary/10 flex flex-col p-10 justify-between"
+                            className="aspect-[3/4] bg-neutral-900 border border-white/10 rounded-3xl overflow-hidden relative group shadow-2xl shadow-primary/10 flex flex-col p-8 md:p-10 justify-between"
                         >
                             {/* Animated Background Mesh */}
                             <div className="absolute inset-0 opacity-20 pointer-events-none">
@@ -100,33 +100,33 @@ const About = () => {
                                 <motion.div
                                     initial={{ scale: 0.8, opacity: 0 }}
                                     whileInView={{ scale: 1, opacity: 1 }}
-                                    className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center border border-primary/30"
+                                    className="w-12 h-12 md:w-16 md:h-16 bg-primary/20 rounded-2xl flex items-center justify-center border border-primary/30"
                                 >
-                                    <Zap className="text-primary w-8 h-8 fill-primary/20" />
+                                    <Zap className="text-primary w-6 h-6 md:w-8 md:h-8 fill-primary/20" />
                                 </motion.div>
-                                <span className="text-[10px] font-bold tracking-[0.4em] uppercase opacity-30 text-white">Identity / 01</span>
+                                <span className="text-[9px] md:text-[10px] font-bold tracking-[0.4em] uppercase opacity-30 text-white">Identity / 01</span>
                             </div>
 
                             {/* Middle Section: Monogram */}
-                            <div className="relative z-10 py-12">
-                                <h3 className="text-[8rem] font-black tracking-tighter leading-none text-white opacity-90">
+                            <div className="relative z-10 py-6 md:py-8 flex-1 flex flex-col justify-center">
+                                <h3 className="text-[min(6rem,15vw)] xl:text-[7.5rem] font-black tracking-tighter leading-none text-white opacity-90">
                                     MHF<span className="text-primary">.</span>
                                 </h3>
-                                <p className="text-xs uppercase tracking-[0.4em] font-bold text-primary mt-4">Mohamed Hassan Fawzi</p>
+                                <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold text-primary mt-4">Mohamed Hassan Fawzi</p>
                             </div>
 
                             {/* Bottom Section: Skill Tags */}
-                            <div className="relative z-10 border-t border-white/5 pt-8 space-y-4">
+                            <div className="relative z-10 border-t border-white/5 pt-6 space-y-4">
                                 <div className="flex flex-wrap gap-2">
                                     {["UI ARCHITECT", "VIBE CODER", "AI STRATEGIST"].map((tag, i) => (
-                                        <span key={i} className="text-[9px] font-bold tracking-widest border border-white/20 px-3 py-1 rounded-full text-white/60">
+                                        <span key={i} className="text-[8px] md:text-[9px] font-bold tracking-widest border border-white/20 px-3 py-1 rounded-full text-white/60">
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
                                 <div className="flex items-center gap-3">
-                                    <Sparkles className="w-3 h-3 text-primary animate-pulse" />
-                                    <span className="text-[10px] font-medium opacity-40 uppercase tracking-[0.2em] text-white">Evolution through Intelligence</span>
+                                    <Sparkles className="w-3 h-3 text-primary animate-pulse flex-shrink-0" />
+                                    <span className="text-[8px] md:text-[10px] font-medium opacity-40 uppercase tracking-[0.15em] text-white">Evolution through Intelligence</span>
                                 </div>
                             </div>
 

@@ -13,7 +13,7 @@ export default {
         light: '#FFFFF7',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
       },
     },
   },

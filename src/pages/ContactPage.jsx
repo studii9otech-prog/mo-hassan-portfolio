@@ -61,7 +61,7 @@ const ContactPage = () => {
     ];
 
     return (
-        <main className="bg-bg-color min-h-screen pt-32 transition-colors duration-500">
+        <main className="bg-bg-color min-h-screen pt-32 transition-colors duration-500 overflow-x-hidden">
             {/* Massive Hero Header */}
             <section className="px-4 md:px-12 mb-32">
                 <div className="max-w-7xl mx-auto">
@@ -80,12 +80,12 @@ const ContactPage = () => {
                         initial={{ y: 100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                        className="text-[4.5rem] md:text-[9.5rem] lg:text-[13rem] font-black tracking-tighter leading-[0.8] uppercase flex flex-col"
+                        className="text-[3rem] md:text-[9.5rem] lg:text-[13rem] font-black tracking-tighter leading-[0.8] uppercase flex flex-col"
                     >
                         <span>Let's build</span>
                         <span className="text-transparent italic font-light outline-text" style={{ WebkitTextStroke: '1px var(--text-color)' }}>something</span>
                         <span className="flex items-center gap-4 md:gap-8">
-                            Great <ArrowRight className="w-16 h-16 md:w-32 md:h-32 text-primary" strokeWidth={3} />
+                            Great <ArrowRight className="w-10 h-10 md:w-32 md:h-32 text-primary" strokeWidth={3} />
                         </span>
                     </motion.h1>
                 </div>
@@ -97,7 +97,7 @@ const ContactPage = () => {
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
                         <div className="space-y-4">
                             <span className="text-primary text-xs uppercase tracking-[0.5em] font-bold">Expertise</span>
-                            <h2 className="text-4xl md:text-6xl font-black tracking-tight uppercase">What I can help with</h2>
+                            <h2 className="text-2xl md:text-6xl font-black tracking-tight uppercase">What I can help with</h2>
                         </div>
                         <p className="max-w-md text-lg opacity-60 font-light">Combining technical robustness with aesthetic excellence to build products that stand out.</p>
                     </div>
@@ -146,7 +146,7 @@ const ContactPage = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="mb-24 text-center space-y-4">
                         <span className="text-primary text-xs uppercase tracking-[0.5em] font-bold">The Journey</span>
-                        <h2 className="text-4xl md:text-7xl font-black tracking-tight uppercase">How we work</h2>
+                        <h2 className="text-2xl md:text-7xl font-black tracking-tight uppercase">How we work</h2>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -172,7 +172,7 @@ const ContactPage = () => {
                     <div className="lg:col-span-7 space-y-16">
                         <div className="space-y-4">
                             <span className="text-primary text-xs uppercase tracking-[0.5em] font-bold">Q&A</span>
-                            <h2 className="text-4xl md:text-6xl font-black tracking-tight uppercase">Common Questions</h2>
+                            <h2 className="text-2xl md:text-6xl font-black tracking-tight uppercase">Common Questions</h2>
                         </div>
 
                         <div className="space-y-2">
@@ -192,11 +192,11 @@ const ContactPage = () => {
                     </div>
 
                     <div className="lg:col-span-5 flex flex-col justify-center">
-                        <div className="p-12 bg-primary rounded-[3rem] text-black space-y-8 relative overflow-hidden group">
+                        <div className="p-8 md:p-12 bg-primary rounded-[2rem] md:rounded-[3rem] text-black space-y-8 relative overflow-hidden group">
                             {/* Decorative Background */}
                             <div className="absolute top-0 right-0 w-64 h-64 bg-black/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 group-hover:scale-110 transition-transform duration-1000" />
 
-                            <h3 className="text-4xl md:text-5xl font-black leading-tight uppercase relative z-10">Start a conversation</h3>
+                            <h3 className="text-2xl md:text-5xl font-black leading-tight uppercase relative z-10">Start a conversation</h3>
                             <p className="text-xl opacity-80 font-light relative z-10">Let's discuss how we can bring your vision to life through high-end design and code.</p>
 
                             <div className="pt-8 relative z-10">

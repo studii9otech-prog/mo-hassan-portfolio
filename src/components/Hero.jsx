@@ -56,29 +56,48 @@ const Hero = () => {
             <div className="absolute inset-0 z-0 opacity-[0.04] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
 
-            <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center h-full py-32 md:py-0">
+            <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center h-full pt-32 pb-20 md:pt-32 md:pb-12">
 
                 {/* LEFT: TITLE & INTRO */}
-                <div className="flex flex-col items-start gap-8 md:gap-12 pointer-events-none">
+                <div className="flex flex-col items-start gap-8 md:gap-12">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
+                        className="pointer-events-none"
                     >
-                        <span className="uppercase tracking-[0.3em] text-xs font-medium text-dimmed mb-4 block">Mohamed Hassan</span>
-                        <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-bold leading-[0.9] tracking-tighter mb-6">
-                            Building <br />
-                            <span className="text-dimmed opacity-40">Digital Value.</span>
+                        <span className="uppercase tracking-[0.3em] text-xs font-medium text-dimmed mb-1 block">Mohamed Hassan</span>
+                        <span className="uppercase tracking-[0.2em] text-[10px] font-bold text-primary mb-6 block">UI/UX Designer & AI Strategist</span>
+                        <h1 className="text-[clamp(3.5rem,9vw,7.25rem)] font-bold leading-[1.05] tracking-tighter mb-6">
+                            Designing <br />
+                            <span className="text-dimmed opacity-40">What's Next.</span>
                         </h1>
                         <p className="max-w-md text-lg text-text-color/70 leading-relaxed">
                             Designing interfaces that don't just function—they feel.
                             Where engineering meets emotion to create digital value.
                         </p>
                     </motion.div>
+
+                    <motion.a
+                        href="#work"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.6 }}
+                        className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.3em] font-bold text-text-color/50 hover:text-primary transition-colors duration-300 pointer-events-auto group"
+                    >
+                        <span>View My Work</span>
+                        <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                    </motion.a>
                 </div>
 
                 {/* RIGHT: INTERACTIVE PROJECT LIST */}
                 <div className="flex flex-col items-start w-full pb-32 md:pb-0">
+                    <motion.span
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.4 }}
+                        className="text-[10px] uppercase tracking-[0.4em] font-bold text-primary mb-6 block"
+                    >What I Do</motion.span>
                     {content.projects.slice(0, 5).map((project, index) => (
                         <ProjectListItem
                             key={project.id}
@@ -153,10 +172,10 @@ const ProjectListItem = ({ project, index, setActiveProject, activeProject, isMo
             onMouseLeave={() => !isMobile && setActiveProject(null)}
             className="w-full relative group cursor-pointer py-12 md:py-6 border-b border-dimmed/10 min-h-[15vh] md:min-h-0 flex flex-col justify-center"
         >
-            <div className={`flex items-center justify-between transition-all duration-300 ${isDimmed ? 'opacity-30 blur-[1px]' : 'opacity-100'}`}>
+            <div className={`flex items-center justify-between transition-all duration-300 ${isDimmed ? 'opacity-30' : 'opacity-100'}`}>
                 <div className="flex items-center gap-6">
                     <span className="text-xs font-mono text-dimmed">0{index + 1}</span>
-                    <h3 className={`text-3xl md:text-5xl font-medium tracking-tight transition-colors duration-300 ${isActive ? 'translate-x-4' : ''}`}
+                    <h3 className={`text-3xl md:text-5xl font-medium tracking-tight transition-all duration-300 ease-out ${isActive ? 'translate-x-4' : ''}`}
                         style={{ color: isActive ? project.color : 'inherit' }}
                     >
                         {project.category}
