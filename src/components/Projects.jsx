@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { useScroll } from 'framer-motion';
+import { useScroll, useSpring } from 'framer-motion';
 import { content } from '../data/content';
 import ProjectCard from './ProjectCard';
 
@@ -8,6 +8,12 @@ const Projects = () => {
     const { scrollYProgress } = useScroll({
         target: container,
         offset: ['start start', 'end end']
+    });
+
+    const smoothProgress = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
     });
 
     return (
@@ -29,7 +35,8 @@ const Projects = () => {
                             key={index}
                             index={index}
                             project={project}
-                            range={[index * .25, 1]}
+                            progress={smoothProgress}
+                            range={[index * 0.15, 1]}
                             targetScale={targetScale}
                         />
                     );

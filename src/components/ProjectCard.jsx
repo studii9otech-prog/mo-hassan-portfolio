@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { MessageCircle, Palette, Database, Lock, Accessibility, Heart, Zap, Navigation } from 'lucide-react';
 
@@ -14,7 +14,7 @@ const iconMap = {
     Navigation
 };
 
-const ProjectCard = ({ project, index, range, targetScale }) => {
+const ProjectCard = ({ project, index, progress, range, targetScale }) => {
     const container = useRef(null);
     const navigate = useNavigate();
     const { scrollYProgress } = useScroll({
@@ -22,10 +22,16 @@ const ProjectCard = ({ project, index, range, targetScale }) => {
         offset: ['start end', 'start start']
     });
 
+    const smoothScroll = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    });
+
     const IconComponent = iconMap[project.icon];
 
-    const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
-    const scale = useTransform(scrollYProgress, range, [1, targetScale]);
+    const imageScale = useTransform(smoothScroll, [0, 1], [2, 1]);
+    const scale = useTransform(progress, range, [1, targetScale]);
 
     return (
         <div ref={container} className="h-[80vh] md:h-screen flex items-center justify-center sticky top-0 px-4 md:px-0">
