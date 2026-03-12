@@ -14,6 +14,24 @@ export const content = {
     },
     projects: [
         {
+            id: "rafqa",
+            title: "Rafqa",
+            category: "Interaction",
+            description: "A daily reassurance system designed for seniors living independently. Rafqa combines gentle check-ins with passive device monitoring to ensure safety.",
+            link: "https://www.behance.net/gallery/245164913/Rafqa-Solving-the-Problem-of-Silent-Emergencies",
+            color: "#7091E6",
+            icon: "Heart",
+            year: "2025",
+            technologies: ["Interaction Design", "UX Research", "Mobile Design", "HealthTech"],
+
+            problem: "Many seniors live alone, and emergencies can go unnoticed for hours or even days. The challenge was to design a system that confirms a user’s well-being daily without making them feel monitored or overwhelmed.",
+            research: "Studied real cases where individuals living alone were discovered only after long periods. Research focused on behavioral patterns of phone usage and psychological comfort. Key insight: A simple daily confirmation combined with passive activity signals can significantly reduce the risk of silent emergencies.",
+            userFlow: "1. Account Setup -> 2. Trusted Contact Selection -> 3. Daily Check-In Reminder -> 4. 'I’m Safe' Confirmation -> 5. Passive Activity Monitoring -> 6. Smart Escalation.",
+            wireframes: "The design focused on calm reassurance rather than urgency. Soft colors, simple layouts, and clear actions help seniors interact with confidence. Construction Mode prioritized high legibility and intuitive navigation.",
+            finalUI: "The interface highlights only the most important actions, reducing cognitive load while maintaining clarity. It creates a quiet layer of reassurance between seniors and their trusted contacts.",
+            why: "Sometimes the most powerful safety system is simply knowing someone will notice if you're not there. Rafqa ensures that prolonged silence never goes unnoticed by bridging simplicity with intelligent background monitoring."
+        },
+        {
             id: "amwag-travel",
             title: "Amwag Travel",
             category: "Product Design",
